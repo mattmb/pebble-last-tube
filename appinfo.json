@@ -1,0 +1,29 @@
+{
+  "uuid": "1e14adeb-5de7-40c6-869d-b802ab13482d",
+  "shortName": "LastTube",
+  "longName": "LastTube",
+  "companyName": "Matthew Mead-Briggs",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "capabilities": [ "location" ],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "station": 0,
+    "line": 1,
+    "destination": 2,
+    "time": 3,
+    "tube": 4
+  },
+  "resources": {
+    "media": [
+      {   
+        "menuIcon": true,
+        "type": "png",
+        "name": "WATCH_MENU_ICON",
+        "file": "watch_menu_icon.png"
+      }   
+    ]   
+  }
+}
