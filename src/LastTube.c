@@ -11,7 +11,7 @@ enum {
   TUBE_KEY_DESTINATION = 2,
   TUBE_KEY_TIME = 3,
 };
-static char station[15];
+static char station[17];
 static char line[16];
 static char destination[15];
 static char time_string[5];
@@ -64,7 +64,7 @@ void out_sent_handler(DictionaryIterator *sent, void *context) {
    Tuple *destination_tuple = dict_find(received, TUBE_KEY_DESTINATION);
    Tuple *time_tuple = dict_find(received, TUBE_KEY_TIME);
    if (station_tuple) {
-       strncpy(station, station_tuple->value->cstring, 15);
+       strncpy(station, station_tuple->value->cstring, 17);
        text_layer_set_text(station_layer, station);
    }
    if (line_tuple) {
