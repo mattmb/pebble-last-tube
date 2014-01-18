@@ -113,6 +113,9 @@ static void window_load(Window *window) {
 
 static void window_unload(Window *window) {
   text_layer_destroy(station_layer);
+  text_layer_destroy(destination_layer);
+  text_layer_destroy(time_layer);
+  text_layer_destroy(line_layer);
 }
 
 static void init(void) {
